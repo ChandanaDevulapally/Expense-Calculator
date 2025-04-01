@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        
+        <!-- Income & Expense Form -->
+        <div class="form-container">
+            <input type="text" id="description" placeholder="Expense Description">
+            <input type="number" id="amount" placeholder="Amount">
+            <select id="category">
+                <option value="Income">Income</option>
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Entertainment">Entertainment</option>
+            </select><br><br>
+        </div>
+            <button id="add-expense-btn">Add Expense</button>
+
+        
+        <!-- Expense List -->
+        <ul id="expense-list"></ul>
+        
+        <!-- Total Balance and Stats -->
+        <div class="summary">
+            <h2>Total Income: <span id="total-income">0</span></h2>
+            <h2>Total Expenses: <span id="total-expenses">0</span></h2>
+            <h2>Balance: <span id="balance">0</span></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
